@@ -85,3 +85,16 @@ function makeHashTag(str) {
   
     return '#' + result;
   }
+
+// CHALLENGE 10 - isEmpty() - Returns true if the given string is empty or contains only whitespace. White space includes: spaces, line returns, and tabs. These characters can be represented with: \n (new line) \r (carrige return), \t (tab).
+function isEmpty(str) {
+    let isEmpty = true
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] == ' ' || str[i] == '\n' || str[i] == '\r' || str[i] == '\t') {
+        return true
+      } else {
+        isEmpty = false
+      }
+    }
+    return isEmpty
+  }
