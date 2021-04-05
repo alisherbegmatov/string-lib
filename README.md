@@ -8,9 +8,9 @@ capitalizeWords(str)
 
 capitalizeHeadline(str)
 
-removeExtraSpace(str)
+removeExtraSpaces(str)
 
-kebabCase(str)
+kebobCase(str)
 
 snakeCase(str)
 

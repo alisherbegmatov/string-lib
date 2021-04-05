@@ -25,8 +25,8 @@ function removeExtraSpaces(str) {
     return strArray.join(" ")
   }
 
-// CHALLENGE 5 - kababCase() - Removes extra spaces and replaces spaces with the hyphen “-“, and makes all characters lowercase.
-function kababCase(str) {
+// CHALLENGE 5 - kebobCase() - Removes extra spaces and replaces spaces with the hyphen “-“, and makes all characters lowercase.
+function kebobCase(str) {
     const strArray = str.split(' ')
     let newStr = ""
     for (let x = 0; x < strArray.length; x++) {
@@ -79,9 +79,9 @@ function shift(str) {
 
 // CHALLENGE 9 - makeHashTag() - This function should convert the given string to a hash tag. A hash tag begins with # and no spaces. Each word in the phrase begins with an uppercase letter.
 function makeHashTag(str) {
-    const capitol = capitalizeWords(str).split(' ')
+    const capital = capitalizeWords(str).split(' ')
   
-    const result = capitol.join('')
+    const result = capital.join('')
   
     return '#' + result;
   }
@@ -116,7 +116,7 @@ export default {
   capitalizeHeadline,
   isEmpty,
   removeExtraSpaces,
-  kababCase,
+  kebobCase,
   snakeCase,
   camelCase,
   shift,
