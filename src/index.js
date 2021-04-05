@@ -38,3 +38,17 @@ function kababCase(str) {
     }
     return newStr
   }
+
+// CHALLENGE 6 - snakeCase() - Removes extra space and replaces spaces with an underscore “_”, and makes all characters lowercase.
+function snakeCase(str) {
+    const strList = str.split(' ')
+    let newStr = ""
+    for (let x = 0; x < strList.length; x++) {
+      if (x === strList.length - 1) {
+        newStr += strList[x]
+      } else {
+        newStr += strList[x] + '_'
+      }
+    }
+    return newStr
+  }
