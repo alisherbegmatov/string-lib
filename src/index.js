@@ -52,3 +52,17 @@ function snakeCase(str) {
     }
     return newStr
   }
+
+// CHALLENGE 7 - camelCase() - Lowercases the first character of the first word. Then uppercases the first character of all other words, and removes all spaces.
+function camelCase(str) {
+    const newString = str.split(' ')
+    let newStr = ""
+    for (let x = 0; x < newString.length; x++) {
+      if (x == 0) {
+        newStr += newString[x]
+      } else {
+        newStr += capitalizeHeadline(newString[x])
+      }
+    }
+    return newStr
+  }
