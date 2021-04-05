@@ -24,3 +24,17 @@ function removeExtraSpaces(str) {
     const strArray = newStr.split(' ').filter(word => word !== '')
     return strArray.join(" ")
   }
+
+// CHALLENGE 5 - kababCase() - Removes extra spaces and replaces spaces with the hyphen “-“, and makes all characters lowercase.
+function kababCase(str) {
+    const strArray = str.split(' ')
+    let newStr = ""
+    for (let x = 0; x < strArray.length; x++) {
+      if (x === strArray.length - 1) {
+        newStr += strArray[x]
+      } else {
+        newStr += strArray[x] + '-'
+      }
+    }
+    return newStr
+  }
