@@ -76,3 +76,12 @@ function shift(str) {
     newArray = newArray.join('')
     return newArray
   }
+
+// CHALLENGE 9 - makeHashTag() - This function should convert the given string to a hash tag. A hash tag begins with # and no spaces. Each word in the phrase begins with an uppercase letter.
+function makeHashTag(str) {
+    const capitol = capitalizeWords(str).split(' ')
+  
+    const result = capitol.join('')
+  
+    return '#' + result;
+  }
