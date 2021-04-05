@@ -98,3 +98,27 @@ function isEmpty(str) {
     }
     return isEmpty
   }
+
+// TEST - console.log() - Random text for testing purposes
+console.log(capitalize("capitalize"))
+console.log(capitalizeWords("capitalize words"))
+console.log(capitalizeHeadline("capitalize head line"))
+console.log(removeExtraSpaces("   remove   extra   spaces   "))
+console.log(camelCase("camel case"))
+console.log(snakeCase("snake case"))
+console.log(shift("shift"))
+console.log(makeHashTag("make hash tag"))
+console.log(isEmpty(" "))
+
+export default {
+  capitalize,
+  capitalizeWords,
+  capitalizeHeadline,
+  isEmpty,
+  removeExtraSpaces,
+  kababCase,
+  snakeCase,
+  camelCase,
+  shift,
+  makeHashTag
+}
