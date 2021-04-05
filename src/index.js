@@ -66,3 +66,13 @@ function camelCase(str) {
     }
     return newStr
   }
+
+// CHALLENGE 8 - shift() - this method will take the first character of a string and move to the end of a string
+function shift(str) {
+    let letterArray = str.split('')
+    let firstLetter = letterArray[0]
+    let newArray = letterArray.slice(1)
+    newArray.push(firstLetter)
+    newArray = newArray.join('')
+    return newArray
+  }
