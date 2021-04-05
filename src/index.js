@@ -17,3 +17,10 @@ function capitalizeHeadline(str) {
     }
     return charArray.join(" ");
   }
+
+// CHALLENGE 4 - removeExtraSpaces() - Removes all spaces from the beginning and end of a String along with any extra spaces in the middle. If more than one space appears in the middle of a string it is replaced by a single space.
+function removeExtraSpaces(str) {
+    let newStr = str.trim()
+    const strArray = newStr.split(' ').filter(word => word !== '')
+    return strArray.join(" ")
+  }
