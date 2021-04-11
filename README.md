@@ -1,3 +1,7 @@
+![](https://img.shields.io/npm/v/src?style=plastic)
+![](https://img.shields.io/github/size/alisherbegmatov/string-lib/src/index.js)
+![](https://img.shields.io/tokei/lines/github/alisherbegmatov/string-lib)
+
 # String Library
 
 # Functions
